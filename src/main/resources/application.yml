@@ -1,0 +1,13 @@
+server:
+  port: -1
+
+armeria:
+  ports:
+    - port: 8081
+      protocol: HTTP
+
+springdoc:
+  swagger-ui:
+    path: /internal/swagger-ui.html # Wrong working: http://localhost:8081/internal/internal/swagger-ui.html
+  api-docs:
+    path: /internal/v3/api-docs # Wrong working: http://localhost:8081/internal/internal/v3/api-docs
